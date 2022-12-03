@@ -1,6 +1,6 @@
 import unittest
 
-from .soln1 import tournament_winner
+from .soln2 import tournament_winner
 
 
 class TestProgram(unittest.TestCase):
