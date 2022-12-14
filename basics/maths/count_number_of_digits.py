@@ -8,7 +8,7 @@ def main():
         count += 1
         print(f"Input number: {input_number}.")
         input_number //= 10
-        print(f"After Divisor, input_number is: {input_number}")
+        print(f"After Quotient, input_number is: {input_number}")
     print(f"Total number count: {count}")
 
 
