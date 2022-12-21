@@ -4,7 +4,7 @@ def is_happy_number(n):
         total_sum = 0
         while number > 0:
             number, digit = divmod(number, 10)
-            total_sum += digit ** 2
+            total_sum += digit**2
         print("\t\tSquare sum of digits: ", total_sum)
         return total_sum
 
