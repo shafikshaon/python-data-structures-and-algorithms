@@ -1,5 +1,6 @@
 # Calculate area of triangle
 
+
 def main():
     a = 5
     b = 6

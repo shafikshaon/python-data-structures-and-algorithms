@@ -30,17 +30,15 @@ def find_sum_of_three(nums, target):
 
 
 def main():
-    nums_lists = [[3, 7, 1, 2, 8, 4, 5],
-                  [-1, 2, 1, -4, 5, -3],
-                  [2, 3, 4, 1, 7, 9],
-                  [1, -1, 0],
-                  [2, 4, 2, 7, 6, 3, 1]]
+    nums_lists = [
+        [3, 7, 1, 2, 8, 4, 5],
+        [-1, 2, 1, -4, 5, -3],
+        [2, 3, 4, 1, 7, 9],
+        [1, -1, 0],
+        [2, 4, 2, 7, 6, 3, 1],
+    ]
 
-    test_lists = [[10, 20, 21],
-                  [-8, 0, 7],
-                  [8, 10, 20],
-                  [1, -1, 0],
-                  [8, 11, 15]]
+    test_lists = [[10, 20, 21], [-8, 0, 7], [8, 10, 20], [1, -1, 0], [8, 11, 15]]
 
     for i in range(len(nums_lists)):
         print(i + 1, ".\tInput array: ", nums_lists[i], sep="")
@@ -52,7 +50,7 @@ def main():
         print("-" * 100)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
 
 # Time complexity - O(n^2)

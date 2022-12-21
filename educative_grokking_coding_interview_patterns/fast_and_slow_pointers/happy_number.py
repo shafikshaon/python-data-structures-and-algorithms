@@ -22,10 +22,14 @@ def is_happy_number(n):
         fast_pointer = sum_digits(sum_digits(fast_pointer))
         print("\t\tThe updated fast pointer is ", fast_pointer, "\n")
     # If 1 is found then it returns True, otherwise False
-    if (fast_pointer == 1):
-        print("\tSince fast pointer has converged to 1, the input number is a happy number.\n")
+    if fast_pointer == 1:
+        print(
+            "\tSince fast pointer has converged to 1, the input number is a happy number.\n"
+        )
         return True
-    print("\tFast pointer has not converged to 1, the input number is not happy number.\n")
+    print(
+        "\tFast pointer has not converged to 1, the input number is not happy number.\n"
+    )
     return False
 
 
@@ -37,7 +41,7 @@ def main():
         print("-" * 100)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
 
 # Time complexity - O(log(n))

@@ -1,5 +1,3 @@
-# Template for linked list node class
-
 class LinkedListNode:
     # __init__ will be used to make a LinkedListNode type object.
     def __init__(self, data, next=None):
@@ -33,7 +31,7 @@ class LinkedList:
     def get_length(self, head):
         temp = head
         length = 0
-        while (temp):
+        while temp:
             length += 1
             temp = temp.next
         return length
@@ -106,8 +104,7 @@ def detect_cycle(head):
         if fast is None:
             print("\tSlow pointer:", slow.data)
             print("\tFast pointer: NULL")
-            print("\tFast pointer has reached the end"
-                  " of the linked list.")
+            print("\tFast pointer has reached the end" " of the linked list.")
             break
         else:
             print("\tSlow pointer:", slow.data)
@@ -115,21 +112,37 @@ def detect_cycle(head):
             print_list_with_forward_arrow(head)
         if slow == fast:
             print("\n\t", " " * ((6 * i - 5)), "ŝf̂", sep=" ")
-            print("\tBoth slow and fast pointers are pointing"
-                  " to the same node!")
+            print("\tBoth slow and fast pointers are pointing" " to the same node!")
             return True
         else:
             if last == -1:
-                print("\n\t", " " * ((6 * (space2 - 1)) - ((6 * space1) - 1) - 3),
-                      " f̂ast  ", " " * (((6 * i) - 14)), "ŝlow", sep="")
+                print(
+                    "\n\t",
+                    " " * ((6 * (space2 - 1)) - ((6 * space1) - 1) - 3),
+                    " f̂ast  ",
+                    " " * (((6 * i) - 14)),
+                    "ŝlow",
+                    sep="",
+                )
                 space2 += 2
             if last == -3:
-                print("\n\t", " " * ((6 * (space2 - 1)) - ((6 * space1) - 1) - 5),
-                      " f̂ast  ", " " * (((6 * i) - 12) - 16), "ŝlow", sep="")
+                print(
+                    "\n\t",
+                    " " * ((6 * (space2 - 1)) - ((6 * space1) - 1) - 5),
+                    " f̂ast  ",
+                    " " * (((6 * i) - 12) - 16),
+                    "ŝlow",
+                    sep="",
+                )
                 space2 += 2
             if last > 0:
-                print("\n\t", " " * (6 * i - (i - 1)) + "ŝlow", " " * ((6 * (j - 1)) - ((6 * i))),
-                      " f̂ast", sep="")
+                print(
+                    "\n\t",
+                    " " * (6 * i - (i - 1)) + "ŝlow",
+                    " " * ((6 * (j - 1)) - ((6 * i))),
+                    " f̂ast",
+                    sep="",
+                )
     return False
 
 

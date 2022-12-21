@@ -1,5 +1,6 @@
 # Print prime number in an interval
 
+
 def main():
     lower_number = 900
     upper_number = 1000

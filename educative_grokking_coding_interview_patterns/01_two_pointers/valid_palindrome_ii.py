@@ -22,19 +22,30 @@ def is_pal(s, left, right):
 
 # Driver Code
 def main():
-    test_cases = ["madame", "dead", "abca",
-                  "tebbem", "eeccccbebaeeabebccceea",
-                  "ognfjhgbjhzkqhzadmgqbwqsktzqwjexqvzjsopolnmvnymbbzoofzbbmynvmnloposjzvqxejwqztksqwbqgmdazhqkzhjbghjfno"]
+    test_cases = [
+        "madame",
+        "dead",
+        "abca",
+        "tebbem",
+        "eeccccbebaeeabebccceea",
+        "ognfjhgbjhzkqhzadmgqbwqsktzqwjexqvzjsopolnmvnymbbzoofzbbmynvmnloposjzvqxejwqztksqwbqgmdazhqkzhjbghjfno",
+    ]
     for i in range(len(test_cases)):
         print("Test Case #", i + 1)
         print("-" * 100)
-        print("\tThe input string is '", test_cases[i], "' and the length of the string is ", len(test_cases[i]), ".",
-              sep='')
+        print(
+            "\tThe input string is '",
+            test_cases[i],
+            "' and the length of the string is ",
+            len(test_cases[i]),
+            ".",
+            sep="",
+        )
         print("\tIs it a palindrome?.....", is_palindrome(test_cases[i]))
         print("-" * 100)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
 
 # Time complexity - O(n)

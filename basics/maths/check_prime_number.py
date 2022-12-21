@@ -1,5 +1,6 @@
 # Check prime number
 
+
 def main():
     input_number = 29
     flag = False

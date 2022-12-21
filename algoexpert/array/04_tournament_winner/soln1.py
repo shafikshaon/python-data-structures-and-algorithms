@@ -23,11 +23,7 @@ def tournament_winner(competitions: List, results: List) -> str:
 
 
 def main():
-    competitions = [
-        ["HTML", "C#"],
-        ["C#", "Python"],
-        ["Python", "HTML"]
-    ]
+    competitions = [["HTML", "C#"], ["C#", "Python"], ["Python", "HTML"]]
     results = [0, 0, 1]
     print(tournament_winner(competitions, results))
 

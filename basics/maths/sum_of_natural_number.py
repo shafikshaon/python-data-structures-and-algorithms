@@ -1,5 +1,6 @@
 # Find the sum of natural number
 
+
 def main():
     num = 16
     sum = 0

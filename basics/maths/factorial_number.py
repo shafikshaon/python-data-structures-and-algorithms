@@ -1,5 +1,6 @@
 # Factorial number
 
+
 def main():
     fact = 1
 
