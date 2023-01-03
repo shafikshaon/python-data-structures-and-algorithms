@@ -23,6 +23,5 @@ def main(nums: List[int]) -> int:
 
 main([1, 1, 2, 3])
 
-
 # Time complexity - O(n)
 # Space complexity - O(1)

@@ -17,6 +17,5 @@ def main(nums: List[int]) -> bool:
 
 main(nums=[1, 2, 3, 4, 4])
 
-
 # Time complexity - O(n)
 # Space complexity - O(n)

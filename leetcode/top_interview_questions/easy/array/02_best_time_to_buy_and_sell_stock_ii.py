@@ -24,6 +24,5 @@ def main(prices: List[int]) -> int:
 
 main([1, 7, 2, 3, 6, 7, 6, 7])
 
-
 # Time complexity - O(n)
 # Space complexity - O(1)
