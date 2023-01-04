@@ -15,17 +15,15 @@ def main(x: int) -> int:
         result = result * 10 + remainder
         print(f"Current reversed value: {result}. and x is: {x}.\n")
 
-    min_val = 2**31 * -1
-    max_val = 2**31 - 1
+    min_val = 2 ** 31 * -1
+    max_val = 2 ** 31 - 1
     if result > max_val or result < min_val:
         return 0
-    print(f"\nAfter reversing the x is: {result*sign}.")
+    print(f"\nAfter reversing the x is: {result * sign}.")
     return result * sign
 
 
 main(x=-123)
-
-# Output
 
 # Time complexity - O(n)
 # Space complexity - O(1)
