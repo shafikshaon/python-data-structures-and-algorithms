@@ -25,5 +25,5 @@ def main(x: int) -> int:
 
 main(x=-123)
 
-# Time complexity - O(n)
+# Time complexity - O(log(n))
 # Space complexity - O(1)
