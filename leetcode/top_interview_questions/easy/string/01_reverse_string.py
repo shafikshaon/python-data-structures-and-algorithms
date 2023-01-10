@@ -17,5 +17,7 @@ def main(s: List[str]) -> None:
 
 main(s=["h", "e", "l", "l", "o"])
 
+# Output
+
 # Time complexity - O(n)
 # Space complexity - O(1)
