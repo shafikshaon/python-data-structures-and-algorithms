@@ -3,7 +3,7 @@ def main(nums):
     sum_r = sum(nums)
     for n in range(len(nums)):
         print(
-            f"Current index {n}, value {nums[n]}, sum left {sum_l}, sum right {sum_r -nums[n]}."
+            f"Current index {n}, value {nums[n]}, sum left {sum_l}, sum right {sum_r - nums[n]}."
         )
         sum_r -= nums[n]
         if sum_l == sum_r:

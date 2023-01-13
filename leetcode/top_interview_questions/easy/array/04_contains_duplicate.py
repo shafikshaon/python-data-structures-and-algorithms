@@ -6,12 +6,12 @@ def main(nums: List[int]) -> bool:
     for i in nums:
         if i in hash_table:
             print(f"Found {i} already found in array.")
-            print(f"Value appears at least twice: Yes")
+            print("Value appears at least twice: Yes")
             return True
         else:
             print(f"Value {i} push to hash table.")
             hash_table[i] = 1
-    print(f"Value appears at least twice: No")
+    print("Value appears at least twice: No")
     return False
 
 

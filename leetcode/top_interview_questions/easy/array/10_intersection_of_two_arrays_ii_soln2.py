@@ -4,7 +4,7 @@ from typing import List
 def main(nums1: List[int], nums2: List[int]) -> List[int]:
     print(f"nums1 array: {nums1}, nums2 array: {nums2}.")
 
-    print(f"Creating an empty dictionary.")
+    print("Creating an empty dictionary.")
     d = {}
 
     print(

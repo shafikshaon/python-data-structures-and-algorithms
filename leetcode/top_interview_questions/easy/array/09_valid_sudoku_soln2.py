@@ -16,10 +16,9 @@ def display_board(board: List[List[str]]) -> None:
 
 
 def main(board: List[List[str]]) -> bool:
-    print(f"Original sudoku board:")
+    print("Original sudoku board:")
     display_board(board)
 
-    n = 9
     rows = [0] * 9
     cols = [0] * 9
     boxes = [0] * 9

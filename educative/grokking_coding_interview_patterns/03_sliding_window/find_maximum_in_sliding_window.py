@@ -38,7 +38,7 @@ def find_max_sliding_window(nums, window_size):
                     f"\t\tnums[{i}] = {nums[i]} is less than nums[window[-1]] = {nums[window[-1]]}"
                 )
             else:
-                print(f"\t\tThe window is empty.")
+                print("\t\tThe window is empty.")
         check = False
 
         # Add current element at the back of the queue
@@ -67,7 +67,7 @@ def find_max_sliding_window(nums, window_size):
                     f"\t\tnums[{i}] = {nums[i]} is less than nums[window[-1]] = {nums[window[-1]]}"
                 )
             else:
-                print(f"\t\tThe window is empty.")
+                print("\t\tThe window is empty.")
         check = False
 
         # Remove first index from the window deque if

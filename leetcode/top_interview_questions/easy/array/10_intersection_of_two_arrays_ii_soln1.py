@@ -28,7 +28,7 @@ def main(nums1: List[int], nums2: List[int]) -> List[int]:
         else:
             output.append(nums1_sort[i])
             print(
-                f"\nCondition: (nums1_sort[i] < nums2_sort[j]) and (nums2_sort[j] < nums1_sort[i]) not satisfied."
+                "\nCondition: (nums1_sort[i] < nums2_sort[j]) and (nums2_sort[j] < nums1_sort[i]) not satisfied."
             )
             print(
                 f"Appending value {nums1_sort[i]} to output array. Now output is {output}."
