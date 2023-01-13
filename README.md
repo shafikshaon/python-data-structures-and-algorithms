@@ -1,1 +1,3 @@
-# python_data_structures_and_algorithms
+# Data Structures and Algorithms in Python
+
+Homepage: https://shafikshaon.github.io/python-data-structures-and-algorithms/
