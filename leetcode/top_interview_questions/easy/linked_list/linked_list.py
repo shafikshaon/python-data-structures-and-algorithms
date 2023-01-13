@@ -30,3 +30,15 @@ class LinkedList:
                 result += ", "
         result += ""
         return result
+
+    @classmethod
+    def display_by_node(cls, head):
+        result = ""
+        temp = head
+        while temp:
+            result += str(temp.data)
+            temp = temp.next
+            if temp:
+                result += ", "
+        result += ""
+        return result
