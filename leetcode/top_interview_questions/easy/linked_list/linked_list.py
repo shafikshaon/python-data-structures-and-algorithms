@@ -15,6 +15,29 @@ class LinkedList:
         else:
             self.head = node
 
+    def append(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = new_node
+            return
+
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
+
+    def insert_after_node(self, prev_node, data):
+
+        if not prev_node:
+            print("Previous node does not exist.")
+            return
+
+        new_node = Node(data)
+
+        new_node.next = prev_node.next
+        prev_node.next = new_node
+
     def create_linked_list(self, lst):
         for x in reversed(lst):
             new_node = Node(x)
