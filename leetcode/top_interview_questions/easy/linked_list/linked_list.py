@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, data, next=None):
+    def __init__(self, data=None, next=None):
         self.data = data
         self.next = next
 
@@ -36,9 +36,7 @@ class LinkedList:
         result = ""
         temp = head
         while temp:
-            result += str(temp.data)
+            result += "  |  " + str(temp.data)
             temp = temp.next
-            if temp:
-                result += ", "
-        result += ""
+        result += "  |"
         return result
