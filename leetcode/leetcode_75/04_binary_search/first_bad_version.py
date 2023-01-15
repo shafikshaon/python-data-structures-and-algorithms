@@ -2,15 +2,15 @@ def display_array(nums, left, mid, right):
     result = ""
     for i in range(len(nums)):
         if i == left:
-            result += f"   ║ left ({i+1})  " + str(nums[i])
+            result += f"   ║ left ({i + 1})  " + str(nums[i])
         if i == mid:
-            result += f"   ║ mid ({i+1})   " + str(nums[i])
+            result += f"   ║ mid ({i + 1})   " + str(nums[i])
         if i == right:
-            result += f"   ║ right ({i+1}) " + str(nums[i])
+            result += f"   ║ right ({i + 1}) " + str(nums[i])
         if i in [left, mid, right]:
             continue
         else:
-            result += f"   ║ ({i+1})       " + str(nums[i])
+            result += f"   ║ ({i + 1})       " + str(nums[i])
     result += " ║"
     return result
 
