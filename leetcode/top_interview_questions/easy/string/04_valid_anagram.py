@@ -40,3 +40,28 @@ main(s="anagram", t="nagaram")
 
 # Time complexity - O(n)
 # Space complexity - O(1)
+
+# Output:
+
+"""
+Original value of s: anagram.
+Original value of t: nagaram.
+
+Creating hash table for first input string: anagram.
+After creating hash table the dictionary is: {'a': 3, 'n': 1, 'g': 1, 'r': 1, 'm': 1}.
+
+Loop through the second string and decrement the count of each letter in the dictionary
+
+Found n in d. So decrementing occurrence from hash table.
+Found a in d. So decrementing occurrence from hash table.
+Found g in d. So decrementing occurrence from hash table.
+Found a in d. So decrementing occurrence from hash table.
+Found r in d. So decrementing occurrence from hash table.
+Found a in d. So decrementing occurrence from hash table.
+Found m in d. So decrementing occurrence from hash table.
+
+Now hash table is: {'a': 0, 'n': 0, 'g': 0, 'r': 0, 'm': 0}.
+All the counts are 0, then t is an anagram of s
+
+"anagram" is valid anagram.
+"""
