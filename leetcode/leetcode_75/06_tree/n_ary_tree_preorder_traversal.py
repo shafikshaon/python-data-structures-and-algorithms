@@ -44,5 +44,11 @@ print(f"Pre order tree: {root.preorder()}")
 
 # Output
 """
-
+Current output: [1].
+Current output: [1, 3].
+Current output: [1, 3, 5].
+Current output: [1, 3, 5, 6].
+Current output: [1, 3, 5, 6, 2].
+Current output: [1, 3, 5, 6, 2, 4].
+Pre order tree: [1, 3, 5, 6, 2, 4]
 """
