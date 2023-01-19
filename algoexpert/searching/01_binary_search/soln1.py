@@ -29,6 +29,12 @@ if __name__ == "__main__":
     main(array=[1, 5, 23, 111], target=35)
 
 """
+Output:
+33 found in array at index 3.
+35 not found in array.
+"""
+
+"""
 Time complexity: O(n)
 Space complexity: O(1
 """
