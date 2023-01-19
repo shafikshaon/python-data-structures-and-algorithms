@@ -32,8 +32,6 @@ class Node:
             self.right.print_tree()
 
     def level_order(self):
-        _root = self
-
         levels_output = []
 
         if not root:
