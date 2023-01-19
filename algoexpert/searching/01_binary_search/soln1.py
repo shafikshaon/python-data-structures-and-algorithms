@@ -36,5 +36,5 @@ Output:
 
 """
 Time complexity: O(n)
-Space complexity: O(1
+Space complexity: O(1)
 """
