@@ -35,9 +35,7 @@ five = Tree("5")
 six = Tree("6")
 left.children = [five, six]
 
-
 print(f"Pre order tree: {root.preorder()}")
-
 
 # Time complexity: O(n)
 # Space complexity: O(n)

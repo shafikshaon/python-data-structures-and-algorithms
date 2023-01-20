@@ -4,12 +4,12 @@
 
 Homepage: https://shafikshaon.github.io/python-data-structures-and-algorithms/
 
-
-
 # [algoexpert](https://www.algoexpert.io/)
 
 ## Questions
+
 ### Binary Search
+
 |                                    Question                                    | Difficulty |          Approach          |
 |:------------------------------------------------------------------------------:|:----------:|:--------------------------:|
 |             [Binary Search](algoexpert/searching/01_binary_search)             |    Easy    | Brute Force, Binary Search |
