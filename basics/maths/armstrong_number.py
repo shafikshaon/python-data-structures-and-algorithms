@@ -13,7 +13,7 @@ def main():
     sum = 0
     while input_number > 0:
         digit = input_number % 10
-        sum = sum + digit**3
+        sum = sum + digit ** 3
         input_number //= 10
 
     if sum == temp:

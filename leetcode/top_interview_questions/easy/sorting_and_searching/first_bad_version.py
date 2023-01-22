@@ -1,6 +1,3 @@
-from typing import List
-
-
 def is_bad_version(mid, bad):
     return mid == bad
 
