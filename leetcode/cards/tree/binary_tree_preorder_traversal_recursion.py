@@ -85,7 +85,7 @@ root.right.right.left = h
 root.print_tree()
 
 tree = TreeNode()
-print(f"Pre order traverse: {tree.pre_order_traversal(node=root)}.")
+print(f"Pre order traversal: {tree.pre_order_traversal(node=root)}.")
 
 """
 Output:
@@ -115,7 +115,7 @@ Traversing left node of root node: I.
 Traversing left node of root node: H.
 Traversing right node of root node: H.
 Traversing right node of root node: I.
-Pre order traverse: ['F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H'].
+Pre order traversal: ['F', 'B', 'A', 'D', 'C', 'E', 'G', 'I', 'H'].
 
 
 Time Complexity: O(n)
