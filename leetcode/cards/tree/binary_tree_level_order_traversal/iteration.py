@@ -40,16 +40,16 @@ class TreeNode:
                 valstr = str(n[0].val)
                 if n[3] == "r":
                     linestr += (
-                            " " * (n[2] - preline - 1 - seg - seg // 2)
-                            + "¯" * (seg + seg // 2)
-                            + "\\"
+                        " " * (n[2] - preline - 1 - seg - seg // 2)
+                        + "¯" * (seg + seg // 2)
+                        + "\\"
                     )
                     preline = n[2]
                 if n[3] == "l":
                     linestr += " " * (n[2] - preline - 1) + "/" + "¯" * (seg + seg // 2)
                     preline = n[2] + seg + seg // 2
                 pstr += (
-                        " " * (n[2] - pre - len(valstr)) + valstr
+                    " " * (n[2] - pre - len(valstr)) + valstr
                 )  # correct the position according to the number size
                 pre = n[2]
             print(linestr)
@@ -64,7 +64,11 @@ class TreeNode:
             return levels
 
         level = 0
-        queue = deque([root, ])
+        queue = deque(
+            [
+                root,
+            ]
+        )
         while queue:
             print(f"Current level: {level}. Currently traversed level: {levels}.")
             levels.append([])

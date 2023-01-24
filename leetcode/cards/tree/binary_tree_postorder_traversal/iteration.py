@@ -64,17 +64,19 @@ class TreeNode:
             current_node = stack[-1]
             if not current_node.left and not current_node.right:
                 stack.pop()
-                print(f"After pushing \"{current_node.val}\", stack is: {self.print_stack(stack)}.")
+                print(
+                    f'After pushing "{current_node.val}", stack is: {self.print_stack(stack)}.'
+                )
                 answer.append(current_node.val)
                 print(f"Traversing array is now: {answer}.")
 
             if current_node.right:
                 stack.append(current_node.right)
-                current_node.right=None
+                current_node.right = None
 
             if current_node.left:
                 stack.append(current_node.left)
-                current_node.left=None
+                current_node.left = None
             print("\n")
         return answer
 

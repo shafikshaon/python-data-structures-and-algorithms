@@ -37,16 +37,16 @@ class TreeNode:
                 valstr = str(n[0].val)
                 if n[3] == "r":
                     linestr += (
-                            " " * (n[2] - preline - 1 - seg - seg // 2)
-                            + "¯" * (seg + seg // 2)
-                            + "\\"
+                        " " * (n[2] - preline - 1 - seg - seg // 2)
+                        + "¯" * (seg + seg // 2)
+                        + "\\"
                     )
                     preline = n[2]
                 if n[3] == "l":
                     linestr += " " * (n[2] - preline - 1) + "/" + "¯" * (seg + seg // 2)
                     preline = n[2] + seg + seg // 2
                 pstr += (
-                        " " * (n[2] - pre - len(valstr)) + valstr
+                    " " * (n[2] - pre - len(valstr)) + valstr
                 )  # correct the position according to the number size
                 pre = n[2]
             print(linestr)
@@ -57,10 +57,14 @@ class TreeNode:
             return 0
         else:
             print(f"Current node is: {root.val}.")
-            print(f"Finding max height of left node: {root.left.val if root.left else None} and root is {root.val}.")
+            print(
+                f"Finding max height of left node: {root.left.val if root.left else None} and root is {root.val}."
+            )
             left_height = self.max_depth(root.left)
             print(f"Left height is: {left_height}.\n")
-            print(f"Finding max height of right node: {root.right.val if root.right else None} and root is {root.val}.")
+            print(
+                f"Finding max height of right node: {root.right.val if root.right else None} and root is {root.val}."
+            )
             right_height = self.max_depth(root.right)
             print(f"Right height is: {right_height}.\n")
             print(f"Current max depth is: {max(left_height, right_height) + 1}.")

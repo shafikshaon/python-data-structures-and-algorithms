@@ -37,16 +37,16 @@ class TreeNode:
                 valstr = str(n[0].val)
                 if n[3] == "r":
                     linestr += (
-                            " " * (n[2] - preline - 1 - seg - seg // 2)
-                            + "¯" * (seg + seg // 2)
-                            + "\\"
+                        " " * (n[2] - preline - 1 - seg - seg // 2)
+                        + "¯" * (seg + seg // 2)
+                        + "\\"
                     )
                     preline = n[2]
                 if n[3] == "l":
                     linestr += " " * (n[2] - preline - 1) + "/" + "¯" * (seg + seg // 2)
                     preline = n[2] + seg + seg // 2
                 pstr += (
-                        " " * (n[2] - pre - len(valstr)) + valstr
+                    " " * (n[2] - pre - len(valstr)) + valstr
                 )  # correct the position according to the number size
                 pre = n[2]
             print(linestr)
@@ -65,10 +65,14 @@ class TreeNode:
             levels[level].append(node.val)
 
             if node.left:
-                print(f"Traversing left tree of root node: {node.left.val}. Next level is: {level + 1}.\n")
+                print(
+                    f"Traversing left tree of root node: {node.left.val}. Next level is: {level + 1}.\n"
+                )
                 helper(node.left, level + 1)
             if node.right:
-                print(f"Traversing right tree of root node: {node.right.val}. Next level is: {level + 1}.\n")
+                print(
+                    f"Traversing right tree of root node: {node.right.val}. Next level is: {level + 1}.\n"
+                )
                 helper(node.right, level + 1)
 
         helper(root, 0)

@@ -37,16 +37,16 @@ class TreeNode:
                 valstr = str(n[0].val)
                 if n[3] == "r":
                     linestr += (
-                            " " * (n[2] - preline - 1 - seg - seg // 2)
-                            + "¯" * (seg + seg // 2)
-                            + "\\"
+                        " " * (n[2] - preline - 1 - seg - seg // 2)
+                        + "¯" * (seg + seg // 2)
+                        + "\\"
                     )
                     preline = n[2]
                 if n[3] == "l":
                     linestr += " " * (n[2] - preline - 1) + "/" + "¯" * (seg + seg // 2)
                     preline = n[2] + seg + seg // 2
                 pstr += (
-                        " " * (n[2] - pre - len(valstr)) + valstr
+                    " " * (n[2] - pre - len(valstr)) + valstr
                 )  # correct the position according to the number size
                 pre = n[2]
             print(linestr)
@@ -66,7 +66,9 @@ class TreeNode:
                 print(f"\nStack is now: {self.print_stack(stack)}.")
             current_depth, root = stack.pop()
             if root:
-                print(f"Current depth is: {current_depth}. Current node is: {root.val if root else None}.")
+                print(
+                    f"Current depth is: {current_depth}. Current node is: {root.val if root else None}."
+                )
             if root:
                 depth = max(depth, current_depth)
                 print(f"Max depth till now: {depth}.")
