@@ -99,6 +99,43 @@ print(f"Is symmetric?: {tree.symmetric_tree(root=_root)}.")
 """
 Output:
 
+       1
+   /¯¯¯ ¯¯¯\
+   2       2
+ /¯ ¯\   /¯ ¯\
+ 3   4   4   3
+
+Left stack: ['1']. Right stack: ['1']
+
+Left stack: ['2', '2']. Right stack: ['2', '2']
+
+Left stack: ['2', '4', '3']. Right stack: ['2', '4', '3']
+
+Left stack: ['2', '4', None, None]. Right stack: ['2', '4', None, None]
+
+Left stack: ['2', '4', None]. Right stack: ['2', '4', None]
+
+Left stack: ['2', '4']. Right stack: ['2', '4']
+
+Left stack: ['2', None, None]. Right stack: ['2', None, None]
+
+Left stack: ['2', None]. Right stack: ['2', None]
+
+Left stack: ['2']. Right stack: ['2']
+
+Left stack: ['3', '4']. Right stack: ['3', '4']
+
+Left stack: ['3', None, None]. Right stack: ['3', None, None]
+
+Left stack: ['3', None]. Right stack: ['3', None]
+
+Left stack: ['3']. Right stack: ['3']
+
+Left stack: [None, None]. Right stack: [None, None]
+
+Left stack: [None]. Right stack: [None]
+Is symmetric?: True.
+
 
 
 Time Complexity: O(n)
