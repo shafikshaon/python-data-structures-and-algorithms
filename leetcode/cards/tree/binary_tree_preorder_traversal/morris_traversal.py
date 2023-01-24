@@ -74,14 +74,12 @@ class TreeNode:
                 # have finished visiting the entire left subtree.
                 if not last.right:
                     answer.append(curr.val)
-                    last.right=curr
-                    curr=curr.left
+                    last.right = curr
+                    curr = curr.left
                 else:
-                    last.right=None
-                    curr=curr.right
+                    last.right = None
+                    curr = curr.right
         return answer
-
-
 
 
 root = TreeNode("F")
