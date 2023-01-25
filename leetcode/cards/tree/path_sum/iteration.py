@@ -135,5 +135,5 @@ Left is: None, Right is: None, and Current sum: 0. So, return True.
 Has path sum?: True.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(log(n))
 """
