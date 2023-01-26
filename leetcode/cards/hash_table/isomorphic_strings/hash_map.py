@@ -16,7 +16,7 @@ def main(s, t):
     return True
 
 
-main(s = "egg", t = "add")
+main(s="egg", t="add")
 
 """
 Output:
