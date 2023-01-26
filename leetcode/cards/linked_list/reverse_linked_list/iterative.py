@@ -9,7 +9,7 @@ def create_linked_list(head: List) -> None:
     print(f"The initial linked list: {linked_list.display()}.")
     head = linked_list.head
 
-    prev = Node(None)
+    prev = None
     current = head
 
     while current:
