@@ -852,6 +852,9 @@ Is 2 exists in hashset? False.
 ['null']
 
 
-Time Complexity: O()
-Space Complexity: O() 
+Time complexity: for each of the methods, the time complexity is O(N/K) where N is the number of all possible keys and
+K is the number 
+of predefined buckets in the hashmap, which is 2069 in our case.
+Space Complexity: O(K+M) where K is the number of predefined buckets in the hashmap and M is the number of unique keys 
+that have been inserted into the hashmap.
 """
