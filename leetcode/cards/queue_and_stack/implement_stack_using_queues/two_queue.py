@@ -2,7 +2,6 @@ from collections import deque
 
 
 class MyStack:
-
     def __init__(self):
         self.q1 = deque()
         self.q2 = deque()
@@ -37,6 +36,7 @@ class MyStack:
         else:
             print(f"Is stack empty? False.")
             return False
+
 
 obj = MyStack()
 obj.push(1)
