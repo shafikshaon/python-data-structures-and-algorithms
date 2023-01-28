@@ -1,13 +1,7 @@
-class Node:
-    def __init__(self, value, next_node=None):
-        self.value = value
-        self.next = next_node
-
-
 class MyCircularQueue:
     def __init__(self, k: int):
-        self.head = None
-        self.tail = None
+        self.queue = [0] * k
+        self.head_index = 0
         self.count = 0
         self.capacity = k
 
@@ -15,16 +9,11 @@ class MyCircularQueue:
         if self.count == self.capacity:
             print(f"Queue is full. So {value} can't enqueue.")
             return False
-        print(f"Enqueue {value} in queue.")
-        if self.count == 0:
-            self.head = Node(value)
-            self.tail = self.head
-        else:
-            new_node = Node(value)
-            self.tail.next = new_node
-            self.tail = new_node
+        self.queue[(self.head_index + self.count) % self.capacity] = value
+        print(
+            f"Enqueue {value} at index {(self.head_index + self.count) % self.capacity}. Now queue is: {self.queue}."
+        )
         self.count += 1
-        print(f"Count is: {self.count}. Queue is now: {self.print_queue()}")
         return True
 
     def deQueue(self) -> bool:
@@ -33,10 +22,10 @@ class MyCircularQueue:
                 f"Total element is queue is: {self.count}. So, dequeue is not possible."
             )
             return False
-        self.head = self.head.next
+        self.head_index = (self.head_index + 1) % self.capacity
         self.count -= 1
         print(
-            f"Dequeue from queue. Count is: {self.count} and queue is now: {self.print_queue()}."
+            f"Dequeue from queue. Head index now: {self.head_index} and count is: {self.count}. Now queue is: {self.queue}."
         )
         return True
 
@@ -44,17 +33,17 @@ class MyCircularQueue:
         if self.count == 0:
             print(f"Queue element count: {self.count} so there is no front element.")
             return -1
-        print(f"Front element is: {self.head.value}.")
-        return self.head.value
+        print(f"Front element is: {self.queue[self.head_index]}.")
+        return self.queue[self.head_index]
 
     def Rear(self) -> int:
         if self.count == 0:
             print(f"Queue element count: {self.count} so there is no front element.")
             return -1
         print(
-            f"Rear element is: {self.tail.value}."
+            f"Front element is: {self.queue[(self.head_index + self.count - 1) % self.capacity]}."
         )
-        return self.tail.value
+        return self.queue[(self.head_index + self.count - 1) % self.capacity]
 
     def isEmpty(self) -> bool:
         print(f"Queue element count: {self.count}. Is queue empty? {self.count == 0}.")
@@ -63,14 +52,6 @@ class MyCircularQueue:
     def isFull(self) -> bool:
         print(f"Queue capacity: {self.capacity}. Queue element count: {self.count}.")
         return self.count == self.capacity
-
-    def print_queue(self):
-        res = []
-        curr = self.head
-        while curr:
-            res.append(curr.value)
-            curr = curr.next
-        return res
 
 
 obj = MyCircularQueue(9)
@@ -86,28 +67,19 @@ param_6 = obj.isFull()
 
 """
 Output:
-Enqueue 1 in queue.
-Count is: 1. Queue is now: [1]
-Enqueue 2 in queue.
-Count is: 2. Queue is now: [1, 2]
-Enqueue 3 in queue.
-Count is: 3. Queue is now: [1, 2, 3]
-Enqueue 4 in queue.
-Count is: 4. Queue is now: [1, 2, 3, 4]
-Enqueue 5 in queue.
-Count is: 5. Queue is now: [1, 2, 3, 4, 5]
-Enqueue 6 in queue.
-Count is: 6. Queue is now: [1, 2, 3, 4, 5, 6]
-Enqueue 7 in queue.
-Count is: 7. Queue is now: [1, 2, 3, 4, 5, 6, 7]
-Enqueue 8 in queue.
-Count is: 8. Queue is now: [1, 2, 3, 4, 5, 6, 7, 8]
-Enqueue 9 in queue.
-Count is: 9. Queue is now: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Enqueue 1 at index 0. Now queue is: [1, 0, 0, 0, 0, 0, 0, 0, 0].
+Enqueue 2 at index 1. Now queue is: [1, 2, 0, 0, 0, 0, 0, 0, 0].
+Enqueue 3 at index 2. Now queue is: [1, 2, 3, 0, 0, 0, 0, 0, 0].
+Enqueue 4 at index 3. Now queue is: [1, 2, 3, 4, 0, 0, 0, 0, 0].
+Enqueue 5 at index 4. Now queue is: [1, 2, 3, 4, 5, 0, 0, 0, 0].
+Enqueue 6 at index 5. Now queue is: [1, 2, 3, 4, 5, 6, 0, 0, 0].
+Enqueue 7 at index 6. Now queue is: [1, 2, 3, 4, 5, 6, 7, 0, 0].
+Enqueue 8 at index 7. Now queue is: [1, 2, 3, 4, 5, 6, 7, 8, 0].
+Enqueue 9 at index 8. Now queue is: [1, 2, 3, 4, 5, 6, 7, 8, 9].
 Queue is full. So 10 can't enqueue.
-Dequeue from queue. Count is: 8 and queue is now: [2, 3, 4, 5, 6, 7, 8, 9].
+Dequeue from queue. Head index now: 1 and count is: 8. Now queue is: [1, 2, 3, 4, 5, 6, 7, 8, 9].
 Front element is: 2.
-Rear element is: 9.
+Front element is: 9.
 Queue element count: 8. Is queue empty? False.
 Queue capacity: 9. Queue element count: 8.
 
