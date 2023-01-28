@@ -8,9 +8,13 @@ class MinStack:
         print(f"Push {val} to stack.")
         self.stack.append(val)
         if not self.min_stack or val <= self.min_stack[-1]:
-            print(f"Value: {val}. Min stack last value is: {self.min_stack[-1] if self.min_stack else None}.")
+            print(
+                f"Value: {val}. Min stack last value is: {self.min_stack[-1] if self.min_stack else None}."
+            )
             self.min_stack.append(val)
-        print(f"After push. Stack is now: {self.stack} and min stack is: {self.min_stack}.")
+        print(
+            f"After push. Stack is now: {self.stack} and min stack is: {self.min_stack}."
+        )
 
     def pop(self) -> None:
         if self.min_stack[-1] == self.stack[-1]:
@@ -48,7 +52,9 @@ print("\n")
 obj.push(9)
 print("\n")
 obj.pop()
-print("\n---------------------------------------------------------------------------------------\n")
+print(
+    "\n---------------------------------------------------------------------------------------\n"
+)
 obj.top()
 obj.getMin()
 
