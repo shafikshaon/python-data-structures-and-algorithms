@@ -6,7 +6,9 @@ def main(x, n):
     ans = 1
     current_product = x
     while n > 0:
-        print(f"Current ans: {ans} and n = {n}. ans = {ans}. Current product: {current_product}.")
+        print(
+            f"Current ans: {ans} and n = {n}. ans = {ans}. Current product: {current_product}."
+        )
         if n % 2 == 1:
             ans *= current_product
         current_product *= current_product
