@@ -10,7 +10,7 @@ def climb_stairs(i, n, memo):
 
 
 def main(n):
-    memo = [i for i in range(n + 1)]
+    memo = [0] * n
     return climb_stairs(0, n, memo)
 
 
@@ -18,7 +18,7 @@ print(f"Distinct ways: {main(n=3)}.")
 
 """
 Output:
-
+Distinct ways: 3.
 
 Time complexity: O(n)
 Space complexity: O(n)
