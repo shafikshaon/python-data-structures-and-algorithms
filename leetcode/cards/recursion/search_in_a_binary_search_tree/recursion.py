@@ -52,16 +52,16 @@ class Node:
                 valstr = str(n[0].val)
                 if n[3] == "r":
                     linestr += (
-                            " " * (n[2] - preline - 1 - seg - seg // 2)
-                            + "¯" * (seg + seg // 2)
-                            + "\\"
+                        " " * (n[2] - preline - 1 - seg - seg // 2)
+                        + "¯" * (seg + seg // 2)
+                        + "\\"
                     )
                     preline = n[2]
                 if n[3] == "l":
                     linestr += " " * (n[2] - preline - 1) + "/" + "¯" * (seg + seg // 2)
                     preline = n[2] + seg + seg // 2
                 pstr += (
-                        " " * (n[2] - pre - len(valstr)) + valstr
+                    " " * (n[2] - pre - len(valstr)) + valstr
                 )  # correct the potition acording to the number size
                 pre = n[2]
             print(linestr)
@@ -73,7 +73,11 @@ class Node:
         def search_bst(root, val):
             if not root or val == root.val:
                 return root
-            return search_bst(root.left, val) if root.val > val else search_bst(root.right, val)
+            return (
+                search_bst(root.left, val)
+                if root.val > val
+                else search_bst(root.right, val)
+            )
 
         return search_bst(root, val)
 
