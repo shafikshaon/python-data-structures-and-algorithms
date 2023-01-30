@@ -12,7 +12,6 @@ def main(x, n):
 
 
 main(x=2.00000, n=10)
-
 """
 Output:
 
