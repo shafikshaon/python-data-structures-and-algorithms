@@ -26,7 +26,9 @@ def create_linked_list(list1: List, list2: List) -> Node:
 
     list1 = linked_list1.head
     list2 = linked_list2.head
-    print(f"Merged linked list: {LinkedList.display_by_node(merge_two_lists(list1, list2))}")
+    print(
+        f"Merged linked list: {LinkedList.display_by_node(merge_two_lists(list1, list2))}"
+    )
     return merge_two_lists(list1, list2)
 
 
