@@ -26,7 +26,9 @@ class Solution:
                 j += 1
         res.extend(left[i:])
         res.extend(right[j:])
-        print(f"Merged left: {left[i:]}. Merged right: {right[j:]}. Merged combine: {res}.")
+        print(
+            f"Merged left: {left[i:]}. Merged right: {right[j:]}. Merged combine: {res}."
+        )
         return res
 
 

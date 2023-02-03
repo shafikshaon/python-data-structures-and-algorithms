@@ -80,7 +80,8 @@ class Node:
                 return False
             self.prev = root.data
             return in_order(root.right)
-        self.prev = float('-inf')
+
+        self.prev = float("-inf")
         return in_order(root)
 
 
