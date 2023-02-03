@@ -38,7 +38,6 @@ sol = Solution()
 sol.uniquePaths(m=3, n=7)
 
 
-
 """
 Output:
 Input m: 3 and n: 7.
