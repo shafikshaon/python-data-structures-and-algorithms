@@ -35,7 +35,6 @@ class Solution:
         return is_lands
 
     def dfs(self, grid, row, col, visited):
-        # print(f"Visit: {(row, col)}. Value: {grid[row][col]}.")
         if (
             row < 0
             or row >= len(grid)
