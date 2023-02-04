@@ -27,7 +27,18 @@ print(f'Output: {sol.getHint(secret = "1807", guess = "7810")}')
 
 """
 Output:
+Input secret: 1807, guess: 7810.
+h is now: Counter({'1': 1, '8': 1, '0': 1, '7': 1}).
 
+Current character: 7. bulls: 0. cows: 1. h is now: Counter({'1': 1, '8': 1, '0': 1, '7': 0}).
+
+Current character: 8. bulls: 1. cows: 1. h is now: Counter({'1': 1, '0': 1, '8': 0, '7': 0}).
+
+Current character: 1. bulls: 1. cows: 2. h is now: Counter({'0': 1, '1': 0, '8': 0, '7': 0}).
+
+Current character: 0. bulls: 1. cows: 3. h is now: Counter({'1': 0, '8': 0, '0': 0, '7': 0}).
+
+Output: 1A3B
 
 Time complexity - O(n)
 Space complexity - O(1)
