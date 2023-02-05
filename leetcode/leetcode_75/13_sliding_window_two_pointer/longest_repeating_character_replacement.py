@@ -15,7 +15,7 @@ class Solution:
             max_frequency = max(max_frequency, frequency_map[s[idx]])
             print(f"Max frequency: {max_frequency}.")
 
-            is_valid = (idx + 1 - start - max_frequency <= k)
+            is_valid = idx + 1 - start - max_frequency <= k
             print(f"Is valid: {is_valid}.")
             if not is_valid:
                 frequency_map[s[start]] -= 1
