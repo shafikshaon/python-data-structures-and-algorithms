@@ -109,3 +109,7 @@ for i in inputs:
         print(f"next: {obj.next()}.")
     elif i == "hasNext":
         print(f"has next: {obj.hasNext()}.")
+
+
+# Time complexity: O(n)
+# Space complexity: O(n)
