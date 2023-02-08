@@ -1,6 +1,6 @@
 from typing import List
 
-from linked_list import LinkedList, Node
+from linked_list import LinkedList
 
 
 def create_linked_list(head: List) -> None:
