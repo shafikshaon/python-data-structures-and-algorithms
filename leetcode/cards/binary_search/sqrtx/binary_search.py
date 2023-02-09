@@ -25,8 +25,8 @@ print(f"Index: {sol.mySqrt(x=8)}.")
 
 """
 Output:
+Index: 2.
 
-
-Time complexity: O()
-Space complexity: O()
+Time complexity: O(logn)
+Space complexity: O(1)
 """
