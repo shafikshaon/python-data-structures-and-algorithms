@@ -17,8 +17,8 @@ def main(heights):
             f"Height count is: {height_count}."
         )
         while (
-                student_count_right_place not in height_count
-                or height_count[student_count_right_place] == 0
+            student_count_right_place not in height_count
+            or height_count[student_count_right_place] == 0
         ):
             print(f"Student in right place: {student_count_right_place + 1}.")
             student_count_right_place += 1

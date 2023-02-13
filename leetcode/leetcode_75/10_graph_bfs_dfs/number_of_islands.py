@@ -4,19 +4,19 @@ from typing import List
 class Solution:
     def print_row(self, row):
         return (
-                " "
-                + "___ " * len(row)
-                + " \n"
-                + "|"
-                + "|".join(f" {x} " for x in row)
-                + "|"
+            " "
+            + "___ " * len(row)
+            + " \n"
+            + "|"
+            + "|".join(f" {x} " for x in row)
+            + "|"
         )
 
     def display_board(self, grid: List[List[str]]):
         return (
-                "\n".join(self.print_row(row) for row in grid)
-                + "\n "
-                + "--- " * len(grid[-1])
+            "\n".join(self.print_row(row) for row in grid)
+            + "\n "
+            + "--- " * len(grid[-1])
         )
 
     def numIslands(self, grid: List[List[str]]) -> int:
@@ -36,12 +36,12 @@ class Solution:
 
     def dfs(self, grid, row, col, visited):
         if (
-                row < 0
-                or row >= len(grid)
-                or col < 0
-                or col >= len(grid[row])
-                or grid[row][col] == "0"
-                or (row, col) in visited
+            row < 0
+            or row >= len(grid)
+            or col < 0
+            or col >= len(grid[row])
+            or grid[row][col] == "0"
+            or (row, col) in visited
         ):
             return 0
 

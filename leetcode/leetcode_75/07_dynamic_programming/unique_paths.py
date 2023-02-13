@@ -4,19 +4,19 @@ from typing import List
 class Solution:
     def print_row(self, row):
         return (
-                " "
-                + "_____ " * len(row)
-                + " \n"
-                + "|"
-                + "|".join(f"  {x}  " for x in row)
-                + "|"
+            " "
+            + "_____ " * len(row)
+            + " \n"
+            + "|"
+            + "|".join(f"  {x}  " for x in row)
+            + "|"
         )
 
     def display_board(self, grid: List[List[int]]):
         return (
-                "\n".join(self.print_row(row) for row in grid)
-                + "\n "
-                + "----- " * len(grid[-1])
+            "\n".join(self.print_row(row) for row in grid)
+            + "\n "
+            + "----- " * len(grid[-1])
         )
 
     def uniquePaths(self, m: int, n: int) -> int:
