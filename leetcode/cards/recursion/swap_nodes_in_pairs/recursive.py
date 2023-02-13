@@ -32,7 +32,6 @@ obj.addAtTail(3)
 obj.addAtTail(4)
 main(head=obj.head, obj=obj)
 
-
 """
 Output:
 Input linked list: [1, 2, 3, 4].

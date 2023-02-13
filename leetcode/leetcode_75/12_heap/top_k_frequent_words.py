@@ -37,7 +37,6 @@ print(
     f'\nOutput: {sol.topKFrequent(words=["i", "love", "leetcode", "i", "love", "coding"], k=2)}.'
 )
 
-
 """
 Output:
 Words counter: Counter({'i': 2, 'love': 2, 'leetcode': 1, 'coding': 1}).

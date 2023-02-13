@@ -4,19 +4,19 @@ from typing import List
 class Solution:
     def print_row(self, row):
         return (
-            " "
-            + "___ " * len(row)
-            + " \n"
-            + "|"
-            + "|".join(f" {x} " for x in row)
-            + "|"
+                " "
+                + "___ " * len(row)
+                + " \n"
+                + "|"
+                + "|".join(f" {x} " for x in row)
+                + "|"
         )
 
     def display_board(self, image: List[List[int]]):
         return (
-            "\n".join(self.print_row(row) for row in image)
-            + "\n "
-            + "--- " * len(image[-1])
+                "\n".join(self.print_row(row) for row in image)
+                + "\n "
+                + "--- " * len(image[-1])
         )
 
     def flood_fill(self, image, sr, sc, new_color):
@@ -49,7 +49,6 @@ output = sol.flood_fill(
 )
 print(f"Output image:")
 print(sol.display_board(output))
-
 
 """
 Output:

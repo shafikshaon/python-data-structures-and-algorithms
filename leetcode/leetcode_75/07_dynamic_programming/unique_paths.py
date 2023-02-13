@@ -4,19 +4,19 @@ from typing import List
 class Solution:
     def print_row(self, row):
         return (
-            " "
-            + "_____ " * len(row)
-            + " \n"
-            + "|"
-            + "|".join(f"  {x}  " for x in row)
-            + "|"
+                " "
+                + "_____ " * len(row)
+                + " \n"
+                + "|"
+                + "|".join(f"  {x}  " for x in row)
+                + "|"
         )
 
     def display_board(self, grid: List[List[int]]):
         return (
-            "\n".join(self.print_row(row) for row in grid)
-            + "\n "
-            + "----- " * len(grid[-1])
+                "\n".join(self.print_row(row) for row in grid)
+                + "\n "
+                + "----- " * len(grid[-1])
         )
 
     def uniquePaths(self, m: int, n: int) -> int:
@@ -30,13 +30,12 @@ class Solution:
                 d[col][row] = d[col - 1][row] + d[col][row - 1]
                 print(f"Current (row, col): {row, col}.")
                 print(sol.display_board(d))
-        print(f"\nPossible unique paths: {d[m-1][n-1]}.")
+        print(f"\nPossible unique paths: {d[m - 1][n - 1]}.")
         return d[m - 1][n - 1]
 
 
 sol = Solution()
 sol.uniquePaths(m=3, n=7)
-
 
 """
 Output:

@@ -1,7 +1,7 @@
 def main(nums):
     output = []
     for n in nums:
-        squared_num = n**2
+        squared_num = n ** 2
         output.append(squared_num)
     return sorted(output)
 

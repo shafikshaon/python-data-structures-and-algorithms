@@ -21,7 +21,6 @@ class Solution:
 sol = Solution()
 print(sol.lastStoneWeight(stones=[2, 7, 4, 1, 8, 1]))
 
-
 """
 Output:
 1

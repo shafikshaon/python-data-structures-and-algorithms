@@ -22,7 +22,6 @@ sol = Solution()
 print(f"Input cost: {[10, 15, 20]}\n")
 sol.minCostClimbingStairs(cost=[10, 15, 20])
 
-
 """
 Output:
 Input cost: [10, 15, 20]

@@ -95,7 +95,6 @@ Now stack is: ['['].
 Is valid parentheses? False.
 """
 
-
 """
 Time complexity: O(n)
 Space complexity: O(n)

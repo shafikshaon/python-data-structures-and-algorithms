@@ -22,8 +22,7 @@ class Solution:
 
 
 sol = Solution()
-print(f'Output: {sol.getHint(secret = "1807", guess = "7810")}')
-
+print(f'Output: {sol.getHint(secret="1807", guess="7810")}')
 
 """
 Output:

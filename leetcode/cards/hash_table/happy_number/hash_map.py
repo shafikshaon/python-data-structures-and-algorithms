@@ -5,7 +5,7 @@ def squared_calc(n):
         n = n // 10
         r = temp % 10
         s += r * r
-    print(f"Squared value of {r} is: {r*r} and next value {s+n}.")
+    print(f"Squared value of {r} is: {r * r} and next value {s + n}.")
     return s
 
 

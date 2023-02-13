@@ -77,7 +77,6 @@ Is stack empty? False.
 
 """
 
-
 """
 Push:
 Time complexity: O(n)

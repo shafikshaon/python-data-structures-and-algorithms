@@ -5,7 +5,7 @@ def main(temperatures):
 
     for current_day in range(n - 1, -1, -1):
         current_temp = temperatures[current_day]
-        print(f"Current day: {current_day+1}. Current temp: {current_temp}.")
+        print(f"Current day: {current_day + 1}. Current temp: {current_temp}.")
         if current_temp >= hottest:
             hottest = current_temp
             continue
@@ -13,7 +13,7 @@ def main(temperatures):
         days = 1
         while temperatures[current_day + days] <= current_temp:
             print(
-                f"Day {current_day+days} temperature {temperatures[current_day + days]} is less warmer then {current_temp}."
+                f"Day {current_day + days} temperature {temperatures[current_day + days]} is less warmer then {current_temp}."
             )
             days += answer[current_day + days]
         answer[current_day] = days

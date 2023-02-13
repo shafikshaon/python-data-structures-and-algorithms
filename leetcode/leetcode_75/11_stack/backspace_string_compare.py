@@ -19,7 +19,6 @@ class Solution:
 sol = Solution()
 sol.backspaceCompare(s="ab#c", t="ad#c")
 
-
 """
 Output:
 Appending "a" to ans: [].

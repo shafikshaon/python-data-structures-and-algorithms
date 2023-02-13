@@ -28,7 +28,6 @@ class Solution:
 sol = Solution()
 print(f'\nOutput: {sol.decodeString(s="3[a]2[bc]")}')
 
-
 """
 Output:
 Input string: 3[a]2[bc].
