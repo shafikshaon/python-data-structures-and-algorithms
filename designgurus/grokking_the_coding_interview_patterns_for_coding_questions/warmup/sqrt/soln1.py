@@ -22,12 +22,3 @@ input1 = 4
 expectedOutput1 = 2
 result1 = solution.mySqrt(input1)
 print(result1)
-
-
-
-
-
-
-
-
-
