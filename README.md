@@ -12,6 +12,6 @@ Homepage: https://shafikshaon.github.io/python-data-structures-and-algorithms/
 
 |                                    Question                                    | Difficulty |          Approach          |
 |:------------------------------------------------------------------------------:|:----------:|:--------------------------:|
-|             [Binary Search](algoexpert/searching/01_binary_search)             |    Easy    | Brute Force, Binary Search |
-| [Find Three Largest Number](algoexpert/searching/02_find_three_largest_number) |    Easy    |             -              |
-|   [Search In Sorted Matrix](algoexpert/searching/03_search_in_sorted_matrix)   |   Medium   |             -              |
+|             [Binary Search](_deprecated/algoexpert/searching/01_binary_search)             |    Easy    | Brute Force, Binary Search |
+| [Find Three Largest Number](_deprecated/algoexpert/searching/02_find_three_largest_number) |    Easy    |             -              |
+|   [Search In Sorted Matrix](_deprecated/algoexpert/searching/03_search_in_sorted_matrix)   |   Medium   |             -              |
