@@ -8,5 +8,8 @@ def bubble_sort(array):
 
 print(bubble_sort([5, 4, 3, 2, 1]))
 
+# Output
+# [1, 2, 3, 4, 5]
+
 # Time complexity: O(n^2)
 # Space complexity: O(1)

@@ -14,6 +14,9 @@ def bubble_sort(array):
 
 print(bubble_sort([5, 4, 3, 2, 1]))
 
+# Output
+# [1, 2, 3, 4, 5]
+
 # Best case
 # Time complexity: O(n)
 # Space complexity: O(1)
